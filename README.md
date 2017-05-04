@@ -19,29 +19,29 @@ master ブランチの必要環境 (The master branch has the following requirem
 
 # インストール (Installation)
 
-`app/Plugin/Chatwork` ディレクトリにコピーするか、`git clone` でファイルを格納してください。
+`app/plugins/Chatwork` ディレクトリにコピーするか、`git clone` でファイルを格納してください。
 
-(Clone/Copy the files in this directory into `app/Plugin/Chatwork`)
+(Clone/Copy the files in this directory into `app/plugins/Chatwork`)
 
 git の場合は `git submodule` コマンドが便利です。
 
 (This can be done with the `git submodule` command)
 
 ```sh
-git submodule add https://github.com/sirone/chatwork_cakephp.git app/Plugin/Chatwork
+git submodule add https://github.com/sirone/chatwork_cakephp.git app/plugins/Chatwork
 ```
 
-`app/Config/bootstrap.php` にて、`Plugin::load('Chatwork', ['bootstrap' => true, 'autoload' => true]);` のようにプラグインを読み込んでください。
+`app/config/bootstrap.php` にて、`Plugin::load('Chatwork', ['bootstrap' => true, 'autoload' => true]);` のようにプラグインを読み込んでください。
 
-(Ensure the plugin is loaded in `app/Config/bootstrap.php` by calling `Plugin::load('Chatwork', ['bootstrap' => true, 'autoload' => true]);`)
+(Ensure the plugin is loaded in `app/cnfig/bootstrap.php` by calling `Plugin::load('Chatwork', ['bootstrap' => true, 'autoload' => true]);`)
 
 # ドキュメント(Documentation)
 
 ## 設定(Configuration)
 
-Chatwork Plugins の設定ファイルの元は、`/app/Plugin/Chatwork/bootstrap.php.default` にあります。
+Chatwork Plugins の設定ファイルの元は、`/app/plugins/Chatwork/config/bootstrap.php.default` にあります。
 
-(A copy of ChatworkPlugin’s bootstrap file is found in `/app/Plugin/Chatwork/bootstrap.default.php`.)
+(A copy of ChatworkPlugin’s bootstrap file is found in `/app/plugins/Chatwork/config/bootstrap.php.default`.)
 
 同一ディレクトリ上にこのファイルのコピーを作り、 `bootstrap.php` という名前にしてください。
 
