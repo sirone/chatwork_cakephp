@@ -14,7 +14,7 @@ Build Status Latest Stable Version License
 
 master ブランチの必要環境 (The master branch has the following requirements)
 
-- CakePHP 2.3.10 以降. (CakePHP 3.1.3 or greater.)
+- CakePHP CakePHP 3.1.3 以降. (CakePHP 3.1.3 or greater.)
 - PHP 5.6.0 以降. (PHP 5.6.0 or greater.)
 
 # インストール (Installation)
